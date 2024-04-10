@@ -1,8 +1,8 @@
-extensions = ["nbsphinx"]
+extensions = ["nbsphinx", "sphinx_favicon"]
 
 templates_path = []
 exclude_patterns = []
-html_static_path = []
+html_static_path = ["wwwroot"]
 
 project = "YiJingFramework.Nongli"
 language = 'zh_CN'
@@ -17,6 +17,11 @@ html_theme_options = {
 }
 # html_logo = "taiji32.png"
 html_title = "YiJingFramework. Nongli"
+favicons = [
+    {
+        "href": "taiji.png" 
+    },
+]
 
 nbsphinx_codecell_lexer = "csharp"
 pygments_style = "vs"
